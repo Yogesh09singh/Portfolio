@@ -3,6 +3,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { Github, Sparkles, Zap, ArrowUpRight } from 'lucide-react';
 import { PORTFOLIO_DATA, ProjectItem } from '../data/portfolioData';
 import { ProjectModal } from './ProjectModal';
+import { RevealOnScroll } from './RevealOnScroll';
 
 export const Projects: React.FC = () => {
   const [selectedFilter, setSelectedFilter] = useState<'All' | 'AI/ML' | 'Full-Stack'>('All');
@@ -19,28 +20,16 @@ export const Projects: React.FC = () => {
     <section id="projects" className="py-24 relative z-10 bg-cardDark/20">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
-        <div className="flex flex-col items-center text-center mb-16">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.5 }}
-            className="inline-flex items-center space-x-2 px-3.5 py-1 rounded-full bg-primaryIndigo/10 border border-primaryIndigo/20 text-primaryIndigo text-xs font-mono mb-3"
-          >
+        <RevealOnScroll className="flex flex-col items-center text-center mb-16">
+          <div className="inline-flex items-center space-x-2 px-3.5 py-1 rounded-full bg-primaryIndigo/10 border border-primaryIndigo/20 text-primaryIndigo text-xs font-mono mb-3">
             <Sparkles className="w-3.5 h-3.5" />
             <span>04. FEATURED PROJECTS</span>
-          </motion.div>
+          </div>
 
-          <motion.h2
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.5, delay: 0.1 }}
-            className="font-sora text-3xl sm:text-4xl lg:text-5xl font-extrabold text-white tracking-tight mb-4"
-          >
+          <h2 className="font-sora text-3xl sm:text-4xl lg:text-5xl font-extrabold text-white tracking-tight mb-4">
             AI Engineering & <span className="gradient-text-primary">Full-Stack Showcase</span>
-          </motion.h2>
-        </div>
+          </h2>
+        </RevealOnScroll>
 
         {/* Filter Pills */}
         <div className="flex justify-center gap-2 mb-12">
