@@ -68,10 +68,10 @@ export const PORTFOLIO_DATA = {
     specialization: "Cloud Computing",
     period: "July 2023 – May 2027",
     location: "Uttar Pradesh, India",
-    cgpa: "7.73 / 10",
+    cgpa: "7.87 / 10",
     highlights: [
       "Specialized in Cloud Computing architectures and distributed systems",
-      "Consistent academic performance with CGPA 7.73/10",
+      "Consistent academic performance with CGPA 7.87/10",
       "Hands-on technical project development alongside rigorous CS curriculum"
     ]
   },
@@ -263,7 +263,7 @@ export const PORTFOLIO_DATA = {
   achievements: [
     "Completed 2 industry internships (Prodigy Infotech & Codsoft), delivering 5+ production-ready web projects.",
     "Earned 4 industry certifications from AWS, Cisco, Infosys Springboard, and HackerRank within 12 months.",
-    "B.Tech Computer Science (Cloud Computing) at NIET with 7.73/10 CGPA."
+    "B.Tech Computer Science (Cloud Computing) at NIET with 7.87/10 CGPA."
   ],
 
   languages: [
