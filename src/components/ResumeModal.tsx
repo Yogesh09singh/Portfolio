@@ -24,7 +24,7 @@ ${PORTFOLIO_DATA.personal.objective}
 
 EDUCATION
 ${PORTFOLIO_DATA.education.institution} (${PORTFOLIO_DATA.education.period})
-${PORTFOLIO_DATA.education.degree} (Specialization in ${PORTFOLIO_DATA.education.specialization}) | CGPA: ${PORTFOLIO_DATA.education.cgpa}
+${PORTFOLIO_DATA.education.degree} (Specialization in ${PORTFOLIO_DATA.education.specialization})
 ${PORTFOLIO_DATA.education.location}
 
 EXPERIENCE
@@ -156,7 +156,7 @@ ${PORTFOLIO_DATA.certifications.map((c) => `* ${c.name} — ${c.issuer} (${c.dat
                     {PORTFOLIO_DATA.education.institution}
                   </h5>
                   <p className="text-textMuted">
-                    {PORTFOLIO_DATA.education.degree} (Specialization in {PORTFOLIO_DATA.education.specialization}) | CGPA: {PORTFOLIO_DATA.education.cgpa}
+                    {PORTFOLIO_DATA.education.degree} (Specialization in {PORTFOLIO_DATA.education.specialization})
                   </p>
                 </div>
                 <div className="text-right font-mono text-textMuted">
